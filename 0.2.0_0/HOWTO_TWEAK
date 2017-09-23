@@ -1,0 +1,28 @@
+https://superuser.com/questions/848664/can-i-disable-chromes-extension-content-verification
+
+There is a fourth way to manage this problem and avoid the detection system entirely. Since you mention you want to hack your extensions, this implies you have some knowledge of extension development. It is also to be understood that extensions are, by their very nature, source code. This means that you have the entire source to fiddle with. That being said...
+
+The fourth method is relatively simple as follows:
+
+Find the extension in the Extensions folder under Chrome's Application Data
+Copy that entire Extension's folder and paste it somewhere else
+Disable the original extension in Chrome
+Rename the newly copied abcsoupname extension folder to MyNewExtension
+Change to MyNewExtension folder
+Delete _metadata
+Edit manifest.json and remove key and update_url sections. Change the name and short_name sections to avoid any confusion with the other disabled extension.
+Validate and correct your manifest.json at jsonlint.com
+Go to the Settings=>Extensions
+Enable Developer Mode and then 'Load Unpacked Extension' on the new folder you just created.
+Voila. A new version of this extension not under Content Control.
+You can now edit, manipulate and manage this extension as you desire. You'll need to click Reload from the extensions area whenever you make a change. Also, you won't receive updates from the original developer. So, you'll need to update periodically and figure out a way to merge updated changes into your separate extension code. You may be able to leave the update_url intact, but it will likely wipe out any changes you make on the next update. This is why I suggest removing it. Though, feel free to experiment.
+
+By leaving the original extension disabled, this will allow you to enable it and periodically receive updates for the author's version. You can then compare the differences between your custom version and the author's version and merge in any necessary changes. I highly recommend this update approach to your new custom extension. If you choose to leave the update_url active, it will likely wipe out your changes on the next update (assuming this even works correctly on a modified extension). Since some extensions don't update very often, this could leave you scrambling to determine what you changed months later when the next update is released.
+
+You will also need to perform these steps on any extension where you want to modify it. Effectively, you're creating a brand new extension using an existing extension's code base and then putting this extension in developer mode.
+
+
+
+
+
+https://mikethedj4.github.io/Webkit-Scrollbar-Generator/

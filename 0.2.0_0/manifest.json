@@ -1,0 +1,10 @@
+{
+   "content_scripts": [ {
+      "css": [ "scrollbar.css" ],
+      "matches": [ "*://*/*" ]
+   } ],
+   "description": "Allows custom webkit css for Chrome scrollbar",
+   "name": "Scrollbar css tweak",
+   "version": "0.2.0.1",
+   "manifest_version": 2
+}

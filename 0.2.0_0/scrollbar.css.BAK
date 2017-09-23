@@ -1,0 +1,39 @@
+/*
+ 
+Clearlook Scrollbar Theme for Google Chrome by Szsz.pl
+=========================
+
+Copyright (c) 2009, Szsz.pl All rights reserved
+Use of this source code is governed by a BSD-style license
+that can be found in the LICENSE file.
+
+You can find more information about styling scrollbars
+at http://webkit.org/blog/363/styling-scrollbars/
+
+If you find a bug, please send mail me with screenshot
+
+                                          Red(at)szsz.pl
+
+*/
+
+::-webkit-scrollbar { background: #d6d4d2; border: 1px solid #a19d9a; }
+::-webkit-scrollbar-thumb { background: #97b8e2; }
+::-webkit-scrollbar-thumb:vertical {
+	background-repeat:	no-repeat,	repeat-y;
+	background-size:	100%;
+	background-position:	50%;
+	-webkit-box-shadow:	0 -1px 0 #5e7ea5, 0 1px 0 #5e7ea5;
+}
+::-webkit-scrollbar-thumb:horizontal {
+	background-repeat:	no-repeat,	repeat-x;
+	background-size:	contain;
+	background-position:	50%;
+	-webkit-box-shadow:	-1px 0 0 #5e7ea5, 1px 0 0 #5e7ea5;
+}
+::-webkit-scrollbar-thumb:vertical {background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAHCAYAAADXhRcnAAAAAXNSR0IArs4c6QAAAB1JREFUGNNjZMACPNK6/6OL7ZhVysgwaADjCHQ2APwuDAQbvHFGAAAAAElFTkSuQmCC),url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAABCAIAAACOvmNtAAAAAXNSR0IArs4c6QAAAC9JREFUCNdjjKtbGuTr/unb73///v/99/8fBP3//+3Hr3///v/9DxUR4mU/ceIYAFmoJYNfMP0GAAAAAElFTkSuQmCC)}
+::-webkit-scrollbar-thumb:horizontal {background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAPCAYAAAAoAdW+AAAAAXNSR0IArs4c6QAAABpJREFUGNNjYBhswCOt+z8uNhM+jTSSHHQAAC9FBrHoEMRxAAAAAElFTkSuQmCC),url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAPCAIAAACqfTKuAAAAAXNSR0IArs4c6QAAADNJREFUCNdjiKtbyrDh9BumT99+M/3795/p77//TP9g+P9/pm8/fkHE/yPEhXjZmYWVzQCuNSU0ubv8eQAAAABJRU5ErkJggg==)}
+::-webkit-scrollbar-button { background-position:50%; background-size:cover; }
+::-webkit-scrollbar-button:vertical:decrement {background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAVhJREFUOMvFkcEuQ0EUhj8zQ5PasaYtO70q6RUeQGKDknDZsMZb2IhI1EYfiSJRXqEsCCVzpRZu750ZC4mFUmXjX52cnP/7T87peXpsuOt6nVrtgkajwU+SUjIwOIhf9Mlks6jbu1uq1WNmZmbJjowgpQRnsc7hnMMkyUeNdTRfmjzc31M9OaY31YcczWZ2fH+SiWKRHsBYgzUGYwwmSYiiiDiOiVst4lYLgP50mih65ez0FBEnCf7UNNba95QuNZbPEycJwjlHKpXit5JS4ZxDdBrSWqO17ggSncylxSWWVwJ0GP4OoLVmoVQiDEOew5AgCAi/gYivzHPzCxTGC1xd1jg/P8PzPILVtS8hbYD19Q0mCgUqlSOUUiilOCyX8bw8m1vbbQD1uVGpHDE8NASAtfY9RQjKBwfcXN/8vEEul0OI9tMIIchkhrv/Qrf6f4AC2N/b/TPgDV2ImkX5US7UAAAAAElFTkSuQmCC)}
+::-webkit-scrollbar-button:vertical:increment {background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAUpJREFUOMutkkFKw1AQhr+0cWua9AB6AxUPIVRv0nRjxSLuRDyC1rVuNBtt9QwioqA0grpI665q1oXwMuPCGiq0DaI/DO+H4X0M84+1t7uj/EE2QGNrG1XNChVk6FNjMo8ogoIqKkqzuf8FABARVATR4TusJEky/9XXrA9Q4I/6f0AURdl4oxIRer3XfIDv16hW/R8QEaG+scFmo5EPOD4+4v7hAd+vYYzBGMN6vU6nE3LYPBgf46hc1+Xyos3q2hoLi0uoKp7nEpye4MzOIqr5S3Rdl3arhed5eJ5HEASUSqXJhzQJ0jo/I0kSHMcZu9ipgG/I9yFNjNGyLAaDwa/zT1ODZVkUZmybm+urXwMew5AZ26awUqkQhh1enp8wxuR+VFX6b32iKGKlUsGKP9611+1yd3dLHMekaToVUCwWKZfLLC0vMz83zyfKT8MVDOIKKQAAAABJRU5ErkJggg==)}
+::-webkit-scrollbar-button:horizontal:decrement {background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAXBJREFUOMudk89OE1EUxn/TTnA316S4Y1jIGnYWeAGNY6y8Cu0zEOIKAu9gpX0E1MQ/adSYbuq2pG0sLJjpNKmr27n3sMAZIjNNrCf5Nue758v9vpPjROG1DAcDPrw/R88Tli338uqSTucLT6q7VHe2WVl58M/Drw8PcL9//cbTZwGPNzYQEYwxy/0gDK/xfR9rDCKytIWSMYay62KswYrNIZpEPA8C+hf9HAdQAkAsYvOYRBFB8AJ/bY1138/xAC6AFcH+aaQVxzEvazW2Nrc4PT0ByL3JBOSeQBzH1F7tMZ1OOT4+WjicCZgkQWudNbXWt4GKoLVeOJxlkFpIoZSi3W6hHirqjQZJkvzFp8gE5J6AtRblebTOzuj1frJfrxeK3G3BSuEWlOfRettk/GvMaDgq3kK5XGb2e4bjOIUePaVoNt+QWs2FuLr6iCgMqVQq/E+VqjvbfP70kW73B/O5LgxrEQCcu3N+xzxJlr6HG8+ITofKV4XBAAAAAElFTkSuQmCC)}
+::-webkit-scrollbar-button:horizontal:increment {background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAW5JREFUOMudk89KAlEUxn+jo+2cAltUjvUC9QZRmpvMepgMItpFtE0KwifI0rfIENr2Z1mg5KrutCsYZu5pMZpjTaEd+DZz7vy457vfMY4OD4QxyjAMzITJWr7A/MICJsDu3v7IgI+Pd25aLVqtaxITyQAgImitRwIkkxMsr+aws/M0m1cDgIwI6NdcJsPr6wuxrxuI/tLj0yPrxSLKUUPfw4rFY/i+HwAQjeiBsraNnclQLG7gKDXUCwsIALrnQV8Ap6cnLC0uslEqoZQa6ofPxcImfm9WKsc4zhulza1ICBCY6Hseruv+MMrzPBBBRHBdN/KMGR4hXFprtstlJqcmaTTqWJYV+dSROdBaU97Z4f7+gUb9EiuV+jUnZvDHcA467Q7d5y71ixpWKvVnRoIRELQMVsLO2tRq5/THiyoRIR6P927wjyQqpUinp3se6NF3wfc97u5u6bQ7rOTzAaBaPRtrnROmSa5QYHZmlk8RMBcAhcAc0wAAAABJRU5ErkJggg==)}
