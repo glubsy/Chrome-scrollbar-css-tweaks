@@ -7,7 +7,7 @@ How to change the Chromium/Chrome scrollbar look and apply any webkit css to it.
 
 # Installation
 
-* Create a directory in ~/.config/google-chrome/Defaults/Extensions/scrollbartweaks and copy the files there
+* Create a directory in ~/.config/google-chrome/Defaults/Extensions/scrollbartweaks and copy or symlink the files there
 
 * Create a custom css at https://mikethedj4.github.io/Webkit-Scrollbar-Generator/ for example and replace scrollbar.css
 
@@ -17,4 +17,6 @@ How to change the Chromium/Chrome scrollbar look and apply any webkit css to it.
 
 http://blog.szsz.pl/2009/12/chrome-extensions-tutorial-1.html
 I just changed the css, nothing fancy. 
-Just lamenting the fact that there's so little info about this tweak.
+Just lamenting the fact that there's so little info about this trick.
+
+Some more tips on how to customize: https://css-tricks.com/custom-scrollbars-in-webkit/

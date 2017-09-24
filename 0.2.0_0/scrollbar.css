@@ -15,6 +15,10 @@ If you find a bug, please send mail me with screenshot
                                           Red(at)szsz.pl
 
 */
+::-webkit-body {
+	background: #2c2c2c;
+	background-color: #f442e8;
+}
 ::-webkit-scrollbar {
   width: 14px;
   height: 14px;
@@ -37,7 +41,7 @@ If you find a bug, please send mail me with screenshot
 ::-webkit-scrollbar-track {
   background: #2c2c2c;
   border: 0px outset #cacaca;
-  border-radius: 100px;
+  border-radius: 0px;
 }
 ::-webkit-scrollbar-track:hover {
   background: #2c2c2c;
@@ -45,6 +49,12 @@ If you find a bug, please send mail me with screenshot
 ::-webkit-scrollbar-track:active {
   background: #2c2c2c;
 }
-::-webkit-scrollbar-corner {
+/*::-webkit-scrollbar-corner {
   background: transparent;
+}*/
+::-webkit-resizer {
+	background: #2c2c2c;
+}
+::-webkit-scrollbar-corner {
+	background: #2c2c2c;
 }
