@@ -15,6 +15,11 @@ If you find a bug, please send mail me with screenshot
                                           Red(at)szsz.pl
 
 */
+
+body {
+  background: #aaaaaa;
+}
+
 ::-webkit-body {
 	background: #2c2c2c;
 	background-color: #f442e8;
