@@ -69,6 +69,7 @@ body {
 
 /* Changes to broken <img> 
 as per https://bitsofco.de/styling-broken-images/ */
+/*
 img {
   font-family: 'Helvetica';
   font-weight: 300;
@@ -80,8 +81,9 @@ img {
   display: block;
   position: relative;
   min-height: 60px;
-}
-/*
+}*/
+
+/* Simple layout:
 img:before {  
   content: "The image below is broken :(";
   display: block;
@@ -94,6 +96,8 @@ img:after {
   font-size: 12px;
 }*/
 
+/* Block layout:*/
+/*
 img:before {
   content: " ";
   display: block;
@@ -121,4 +125,4 @@ img:after {
   left: 0;
   width: 100%;
   text-align: center;
-}
+}*/
