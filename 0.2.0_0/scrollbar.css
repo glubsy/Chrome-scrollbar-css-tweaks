@@ -18,6 +18,7 @@ If you find a bug, please send mail me with screenshot
 
 body {
   background: #aaaaaa;
+  background-color: #aaaaaa;
 }
 
 ::-webkit-body {
@@ -62,4 +63,62 @@ body {
 }
 ::-webkit-scrollbar-corner {
 	background: #2c2c2c;
+}
+
+
+
+/* Changes to broken <img> 
+as per https://bitsofco.de/styling-broken-images/ */
+img {
+  font-family: 'Helvetica';
+  font-weight: 300;
+  line-height: 2;
+  text-align: center;
+
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  min-height: 60px;
+}
+/*
+img:before {  
+  content: "The image below is broken :(";
+  display: block;
+  margin-bottom: 10px;
+}
+
+img:after {  
+  content: "(url: " attr(src) ")";
+  display: block;
+  font-size: 12px;
+}*/
+
+img:before {
+  content: " ";
+  display: block;
+
+  position: absolute;
+  top: -5px;
+  left: 0;
+  height: calc(100% + 5px);
+  width: 100%;
+  background-color: rgb(250, 200, 230);
+  border: 2px dotted rgb(200, 200, 200);
+  border-radius: 5px;
+}
+
+img:after {  
+  content: "\f127" " Broken Image URL:" attr(src);
+  display: block;
+  font-size: 16px;
+  font-style: bold;
+  font-family: FontAwesome;
+  color: rgb(255, 0, 0);
+
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 100%;
+  text-align: center;
 }
